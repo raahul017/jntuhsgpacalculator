@@ -1,0 +1,55 @@
+<title>
+jntuh cgpa calculator
+</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<script src="script.js"></script>
+<div class="calculator-box">
+<h1>JNTUH SGPA CALCULATOR</h1>
+    <p>
+      <marquee direction="right">This SGPA Calculator is based on JNTUH University.</marquee> 
+    </p>
+
+    <div id="subjectname-wrapper">
+      <form class="key-0">
+        <p> <label id="subjectname-row" for="subjectname">Subjectname:</label> 
+         <label id="credit-row" for="credit-units">Credits Units:</label>
+       <label id="grade-row" for="grade">Grades:</label></p>
+          <input
+            type="text"
+            placeholder="Subjectname Code"
+            class="subjectnames key-0"
+            required/>
+<!--               <label for="credit-units">Credits:</label> -->
+          <input
+            type="number"
+            class="credit-units key-0"
+            placeholder="Credits Units"
+            value=""
+            required
+          />
+<!--               <label for="grade">Grade: </label> -->
+          <select class="grade key-0" required>
+            <option class="grade" value="select">Select</option>
+            <option class="grade" value="10">O</option>
+            <option class="grade" value="9">A+</option>
+            <option class="grade" value="8">A</option>
+            <option class="grade" value="7">B+</option>
+            <option class="grade" value="6">B</option>
+            <option class="grade" value="5">C</option>
+            <option class="grade" value="0">F/AB</option>
+          </select>
+      </form>
+    </div>
+    <!-- <section class"btn">+ Add subjectnamee</section> -->
+    <div class="btn">
+      <button onclick="addSubjectname()">+ Add Subjectname</button>
+      <button onclick="removeSubjectname()">- Remove Subjectname</button>
+      <button onclick="calcSgpa()">Calculate SGPA</button>
+    </div>
+    <div class="lastp">
+      <p id="sgpa-calc">Your SGPA is:</p>
+    </div>
+    <h5>Made by RAHUL RAPARTHI.</h5>
+  </div>
